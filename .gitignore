@@ -1,0 +1,5 @@
+*__pycache__*
+*.pyc
+
+rds.txt
+.env
