@@ -55,6 +55,3 @@ There are 3 main services used in application AuthHandler, FileHandler and DBHan
 
  **FileHandler** takes care of uploading the file to S3, fetching all files, versionID and generating the SignedURL for the files in Bucket.
 
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
