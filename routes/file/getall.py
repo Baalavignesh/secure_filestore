@@ -11,7 +11,7 @@ getall_files = APIRouter()
 @getall_files.post('/getall', tags=['File Management'])
 async def getFiles(token=Depends(auth_handler.auth_wrapper)):
     try:
-        userid = token['userid']
+        userid = token['Email']
         print(userid)
         res = file_handler.get_files(userid)
         return res

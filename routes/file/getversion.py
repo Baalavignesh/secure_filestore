@@ -11,7 +11,7 @@ getall_version = APIRouter()
 @getall_version.post('/getversions', tags=['File Management'])
 async def getFiles(obj_name, token=Depends(auth_handler.auth_wrapper)):
     try:
-        userid = token['userid']
+        userid = token['Email']
         print(userid)
         res = file_handler.get_versions(obj_name)
         return res
